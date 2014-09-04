@@ -1,0 +1,14 @@
+; Basic .info requirements
+name = "Content Stage"
+description = "Migration for Content Staging"
+package = "Migration"
+core = 7.x
+
+; You need migrate for this
+dependencies[] = migrate
+
+; Add the .migrate.inc file to with the class registrations. 
+; Separate your migration classes out as desired.
+files[] = content_stage.migrate.inc
+files[] = node.inc
+files[] = term.inc
