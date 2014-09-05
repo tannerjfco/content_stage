@@ -3,6 +3,11 @@ This module is a migration to be used with [Migrate](https://www.drupal.org/proj
 
 Utilizing this approach for gathering and staging content during development for a site allows you and your clients to work on building out content as soon as your content structure is defined. Since the migration source is a simple CSV, this allows for utilizing services like [Google Docs/Drive](http://drive.google.com) to provide a centralized collaborative point for building content.
 
+## Dependencies ##
+
+* [Drupal 7.x](https://www.drupal.org/download)
+* [Migrate 2.6-rc1 or dev](https://www.drupal.org/node/391350/release)
+
 ## Current Scope / Status ##
 
 This migration is an example that can be run against a Drupal 7 Standard Install. It can be used as a starting point for your own migrations by either creating your own module & classes that extend off of content_stage (preferred), or you can jump right in and suit it to your needs.

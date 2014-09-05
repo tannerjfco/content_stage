@@ -24,7 +24,10 @@ class StageBasicPageMigration extends Migration {
 		// Now we define our destination. For this we're using the node destination and specifying the node type we're importing to.
 		$this->destination = new MigrateDestinationNode('page');
 
-		// Onto Field Mappings. This tells migrate what csv fields should be imported to which drupal fields.
+		/* 
+		 * Onto Field Mappings. This tells migrate what csv fields should be imported to which drupal fields.
+		 * Migrate Field Mappings Documentation: https://www.drupal.org/node/1133448
+		 */
 
 		// Our source and destination field names are the same, so for most cases we can use addSimpleMappings()
 		$this->addSimpleMappings(array('nid', 'title', 'path', 'body', 'created', 'changed'));
